@@ -4,22 +4,59 @@
 <header>
     <title>EyeCandyBakery</title>
 
+    <!--Y1748016-->
+
     <style>
         @font-face{
             font-family: EyeCandy; 
             src: url('EyeCandy.ttf');
+            ascent-override: 30%;
+            descent-override: 15%;
         }
-        body{
-            background-color: lightpink;
+        body, .topbar{
             font-family: EyeCandy, Impact;
-            font-size: 48px;
-            line-height: 10px;
+            background-image: url('webbackground20.png');
+            background-color:#A9B6EA;
+            background-blend-mode:soft-light;
+            background-size:20%;
+            background-repeat: repeat;
+            user-select: none;
+        }
+        .topbar{
+            background-color:rgb(123,146,236);
+            /*background-color:rgb(67,87,114);*/
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .wrapper{
+            text-align: center;
+            margin: 10px;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .menubar p{
+            width: 16.66677%;
+            text-align: center;
+            float: left;
+        }
+        .boxsection{
+            width: 60%;
+            margin: 0 auto; /*This part is what makes the difference for centering*/
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 25px;
         }
         p{
             color: black;
-            width: 100px;
-            height: 100px;
-            float: left;
+            font-size: 50px;
+        }
+        .boxsection p{
+            margin: 10px;
         }
         .pink{
             background-color: #f1c0d5;
@@ -45,6 +82,24 @@
         .lightyellow{
             background-color:rgb(249,255,223);
         }
+        .titlepink{
+            background-color:rgb(238,145,181);
+        }
+        .titleorange{
+            background-color:rgb(235,198,164);
+        }
+        .titleyellow{
+            background-color:rgb(250,244,187);
+        }
+        .titlegreen{
+            background-color:rgb(204,243,238);
+        }
+        .titleblue{
+            background-color:rgb(152,219,254);
+        }
+        .titlepurple{
+            background-color:rgb(202,154,239);
+        }
         
 
     </style>
@@ -52,15 +107,45 @@
 </header>
 
 <body>
-    <p class="pink"> This is a color. This is a color.</p></p>
-    <p class="purple"> This is a color.</p>
-    <p class="blue"> This is a color.</p>
-    <p class="green"> This is a color.</p>
-    <p class="orange"> This is a color.</p>
-    <p class="indigo"> This is a color.</p>
-    <p class="lightpink"> This is a color.</p>
-    <p class="lightyellow"> This is a color.</p>
-    <img src="player.png" flex-grow="1" flex-shrink="0" position="absolute"/>
+    <div class="topbar">
+
+    <center><img src="gamename.png" style="width: 25%; height: 25%; margin-top: 12px;" /></center>
+    <center><p>updates</p></center>
+    <center><p style="margin-bottom: 0px"> by Nicole Navarro</p></center>
+
+    <div class = "menubar" style="margin-bottom:40px">
+        <p class="titlepink"><a href="#">HOME</a></p>
+        <p class="titleorange"><a href="#">STORY</a></p>
+        <p class="titleyellow"><a href="#">ALPHA</a></p>
+        <p class="titlegreen"><a href="#">UPDATES</a></p>
+        <p class="titleblue"><a href="#">DEVELOPER</a></p>
+        <p class="titlepurple" style="color:rgb(202,154,239)">...</p>
+    </div>
+    </div>
+
+    <div class = "wrapper">
+        <div class = "boxsection" style="background-color:white; margin-bottom:40px;">
+            <p> In the Spring 2023 Quarter of my senior year at the University of California,
+                Riverside, I took CS179N Senior Project in Computer Graphics. Students got into groups
+                of 4-5 to create teams, each of which was to create and complete a game by the end
+                of the quarter. In my team of 5, when we were discussing ideas for games, I asked
+                repeatedly if anyone had any ideas, and I waited to present mine. When no one else
+                presented ideas for games, I presented Eye Candy Bakery. I take full credit for the 
+                game's concept, design, characters, dialogue, gameplay, and art.</p>
+        </div>
+        <img src="candy.png" flex-grow="1" flex-shrink="0" position="absolute"/>
+        <img src="player.png" flex-grow="1" flex-shrink="0" position="absolute"/>
+        <img src="coco.png" flex-grow="1" flex-shrink="0" position="absolute"/>
+
+    </div>
+
+
+    <!-- What things do I need for this
+        ABOUT
+        ORIGINS/ALPHA
+        UPDATES-->
+
+    <!--<img src="player.png" flex-grow="1" flex-shrink="0" position="absolute"/>-->
 
 
 </body>
